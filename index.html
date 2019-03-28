@@ -1,0 +1,290 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="manifest" href="site.webmanifest">
+  <link href="https://fonts.googleapis.com/css?family=Cookie|Open+Sans|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="site-header">
+      <div class="hero">
+          <div class="contenido-header">
+              <nav class="redes-sociales">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+              </nav>
+              <div class="informacion-evento">
+                 <div class="clearfix">
+                  <p class="disponible" id="disponible"><i class="fas fa-door-open"></i>Abierto ahora</p>
+                  <p class="ciudad"><i class="fas fa-map-marker-alt"></i>Coatzacoalcos, Veracruz</p>
+                  </div>
+                  <img class="logo-principal" src="img/logo_principal.png" alt="logo-principal">
+              </div><!--Informacion de la pizzeria-->
+          </div>
+      </div><!--hero-->
+  </header>
+  <div class="barra">
+      <div class="contenedor clearfix">
+          <div class="logo">
+              <img class="logo-secundario" src="img/logo_secundario.png" alt="logo-secundario">
+          </div>
+          <div class="menu-movil">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <nav class="navegacion-principal">
+             <a href="javascript:$.scrollTo('#promocion',800);">Promociones</a>
+             <a href="#informacion">Informacion</a>
+             <a href="#">Nosotros</a>
+             <a href="#">Empleo</a>
+          </nav>
+      </div><!--contenedor-->
+  </div><!--barra-->
+    <section class="menu-comida clear" id="menu">
+      <h2>Nuestro menú</h2>
+      <nav class="nuestro-menu">
+        <a href="#">Pizzas</a>
+        <a href="#" id="hamburgesas">Hamburgesas</a>
+        <a href="#">Complementos</a>
+  </nav>
+  <nav class="nuestro-menu2">
+    <a href="#">Clasica</a>
+    <a href="#">Especial</a>
+    <a href="#">Gourmet</a>
+  </nav>
+      <ul class="lista-menu" id="clasicas">
+        <li>
+          <div class="menu-restaurante" id="menu">
+              <img src="img/menu-pizzeria/clásica/AjoLD.jpg" alt="imagen pizza" class="img-menu">
+              <p>Ajo</p>
+          </div>
+        </li>
+        <li>
+          <div class="menu-restaurante">
+              <img src="img/menu-pizzeria/clásica/AtunLD.jpg" alt="imagen pizza" class="img-menu">
+              <p>Atun</p>
+          </div>
+        </li>
+        <li>
+          <div class="menu-restaurante">
+              <img src="img/menu-pizzeria/clásica/CarneLD.jpg" alt="imagen pizza" class="img-menu">
+              <p>Carne</p>
+          </div>
+        </li>
+        <li>
+          <div class="menu-restaurante">
+              <img src="img/menu-pizzeria/clásica/ChampinonesLD.jpg" alt="imagen pizza" class="img-menu">
+              <p>Champiniones</p>
+          </div>
+        </li>
+        <li>
+          <div class="menu-restaurante">
+              <img src="img/menu-pizzeria/clásica/ChorizoLD.jpg" alt="imagen pizza" class="img-menu">
+              <p>Chorizo</p>
+          </div>
+        </li>
+        <li>
+          <div class="menu-restaurante">
+              <img src="img/menu-pizzeria/clásica/HawaianaLD.jpg" alt="imagen pizza" class="img-menu">
+              <p>Hawaiana</p>
+          </div>
+        </li>
+        <li>
+            <div class="menu-restaurante">
+                <img src="img/menu-pizzeria/clásica/JamonLD.jpg" alt="imagen pizza" class="img-menu">
+                <p>Jamón</p>
+            </div>
+          </li>
+          <li>
+            <div class="menu-restaurante">
+                <img src="img/menu-pizzeria/clásica/PeperoniLD.jpg" alt="imagen pizza" class="img-menu">
+                <p>Peperoni</p>
+            </div>
+          </li>
+          <li>
+            <div class="menu-restaurante">
+                <img src="img/menu-pizzeria/clásica/PolloLD.jpg" alt="imagen pizza" class="img-menu">
+                <p>Pollo</p>
+            </div>
+          </li>
+          <li>
+            <div class="menu-restaurante">
+                <img src="img/menu-pizzeria/clásica/QuesoLD.jpg" alt="imagen pizza" class="img-menu">
+                <p>Queso</p>
+            </div>
+          </li>
+          <li>
+            <div class="menu-restaurante">
+                <img src="img/menu-pizzeria/clásica/SalamiLD.jpg" alt="imagen pizza" class="img-menu">
+                <p>Salami</p>
+            </div>
+          </li>
+          <li>
+            <div class="menu-restaurante">
+                <img src="img/menu-pizzeria/clásica/SalchichaLD.jpg" alt="imagen pizza" class="img-menu">
+                <p>Salchicha</p>
+            </div>
+          </li>
+          <li>
+            <div class="menu-restaurante">
+                <img src="img/menu-pizzeria/clásica/TocinoLD.jpg" alt="imagen pizza" class="img-menu">
+                <p>Tocino</p>
+            </div>
+          </li>
+    </ul>
+    <ul class="lista-menu" id="hamburgesas">
+      <li>
+        <div class="menu-restaurante" id="menu">
+            <img src="img/menu-pizzeria/clásica/AjoLD.jpg" alt="imagen pizza" class="img-menu">
+            <p>Ajo</p>
+        </div>
+      </li>
+      <li>
+        <div class="menu-restaurante">
+            <img src="img/menu-pizzeria/clásica/AtunLD.jpg" alt="imagen pizza" class="img-menu">
+            <p>Atun</p>
+        </div>
+      </li>
+      <li>
+        <div class="menu-restaurante">
+            <img src="img/menu-pizzeria/clásica/CarneLD.jpg" alt="imagen pizza" class="img-menu">
+            <p>Carne</p>
+        </div>
+      </li>
+      <li>
+        <div class="menu-restaurante">
+            <img src="img/menu-pizzeria/clásica/ChampinonesLD.jpg" alt="imagen pizza" class="img-menu">
+            <p>Champiniones</p>
+        </div>
+      </li>
+      <li>
+        <div class="menu-restaurante">
+            <img src="img/menu-pizzeria/clásica/ChorizoLD.jpg" alt="imagen pizza" class="img-menu">
+            <p>Chorizo</p>
+        </div>
+      </li>
+      <li>
+        <div class="menu-restaurante">
+            <img src="img/menu-pizzeria/clásica/HawaianaLD.jpg" alt="imagen pizza" class="img-menu">
+            <p>Hawaiana</p>
+        </div>
+      </li>
+      <li>
+          <div class="menu-restaurante">
+              <img src="img/menu-pizzeria/clásica/JamonLD.jpg" alt="imagen pizza" class="img-menu">
+              <p>Jamón</p>
+          </div>
+        </li>
+        <li>
+          <div class="menu-restaurante">
+              <img src="img/menu-pizzeria/clásica/PeperoniLD.jpg" alt="imagen pizza" class="img-menu">
+              <p>Peperoni</p>
+          </div>
+        </li>
+        <li>
+          <div class="menu-restaurante">
+              <img src="img/menu-pizzeria/clásica/PolloLD.jpg" alt="imagen pizza" class="img-menu">
+              <p>Pollo</p>
+          </div>
+        </li>
+        <li>
+          <div class="menu-restaurante">
+              <img src="img/menu-pizzeria/clásica/QuesoLD.jpg" alt="imagen pizza" class="img-menu">
+              <p>Queso</p>
+          </div>
+        </li>
+  </ul>
+    <div style="clear: both"></div>
+    </section>
+    <div id="promocion" class="promocion parallax">
+        <div class="promo">
+           <p>En la compra de 10 pizzas llevate 1 ¡Gratis!</p>
+        </div>
+    </div>
+    <section class="informacion-restaurante" id="informacion">
+      <div class="datos">
+        <nav class="info-redes">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+         </nav>
+    </div>
+    <div class="datos">
+        <h3>encuentranos en :</h3>
+        <span>Coatzacoalcos, Veracruz</span>
+        <p>AV. Revolucion #209</p>
+        <h3>telefonos:</h3>
+        <p>21-2-33-76</p>
+    </div>
+    <div class="datos">
+      <h3>horarios:</h3>
+      <ul>
+          <li><p>Domingo: 8:00 - 23:00</p></li>
+          <li><p>Lunes: 8:00 - 23:00</p></li>
+          <li><p>Martes: 8:00 - 23:00</p></li>
+          <li><p>Miercoles: 8:00 - 23:00</p></li>
+          <li><p>Jueves: 8:00 - 23:00</p></li>
+          <li><p>Viernes: 8:00 - 23:00</p></li>
+          <li><p>Sabado: 8:00 - 23:00</p></li>
+      </ul>
+    </div>
+</div>
+<div style="clear: both"></div>
+    </section>
+    <div id="mapa"></div>
+    <form action="enviar.php" method="POST">
+      <h2>¡Contactanos!</h2>
+      <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+      <input type="text" name="apellidos" placeholder="Escribe tus apellidos" required>
+      <input type="email" name="email" placeholder="Escribe tu Email"required>
+      <textarea type="text" name="mensaje" placeholder="Escribe tu mensaje" class="mensaje"required></textarea>
+      <input type="submit" value="Enviar" class="enviar">
+    </form>
+<footer>
+  <div class="datos">
+    <nav class="navegacion-footer">
+       <a href="index.html">Inicio</a>
+       <a href="#">Promociones</a>
+       <a href="#informacion">Informacion</a>
+       <a href="#">Nosotros</a>
+       <a href="#">Empleo</a>
+    </nav>
+</div>
+<div class="datos">
+    <h4>visita nuestras<span>REDES SOCIALES</span></h4>
+    <nav class="redes-footer">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+     </nav>
+</div>
+<div class="datos sobre-info">
+  <h4>sobre<span>IL BUON MANGIARE</span></h4>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+         usdam nolores perspiciatis quae consequatur</p>
+</div>
+<div style="clear: both"></div>
+</footer>
+<div class="pie"></div>
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="js/jquery-latest.js"></script>
+  <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+
+
+  </body>
+</html>

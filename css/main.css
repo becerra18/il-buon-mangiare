@@ -1,0 +1,761 @@
+/* ==========================================================================
+    Estilos generales
+    ========================================================================== */
+:root {
+    --titulo: 'Cookie', cursive;
+    --subtitulo: 'ZCOOL QingKe HuangYou', cursive;
+    --texto: 'Open Sans', sans-serif;
+    --primero: #fe4918;
+    --segundo: #195BA3;
+    --footer: #2F353C;
+}
+body {
+    margin: 0;
+    background-color: #e1e1e1;
+}
+html {
+    min-height: 100%;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+.clearfix:before,
+.clearfix:after {
+    content: ' ';
+    display: table;
+}
+section {
+    padding: 2em;
+}
+/*.menu-comida {
+    background: red;
+}
+.informacion-restaurante {
+    background: blue;
+}*/
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+h2 {
+    font-family: 'Cookie', cursive;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+@media only screen and (min-width:480px) {
+    h2 {
+        font-family: 'Cookie', cursive;
+        font-size: 6em;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media only screen and (min-width:768px) {
+    h2 {
+        font-family: var(--titulo);
+        font-size: 4em;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+}
+/* ==========================================================================
+    header foto de portada
+    ========================================================================== */
+    @media only screen and (max-width: 480px) {
+    div.hero {
+        background-image: url(../img/portada.jpg);
+        height: 100vh;
+        background-position: top center;
+        background-size: cover;
+        max-width: 100%;
+    }
+    div.contenido-header {
+        padding-top: .5em;
+    }
+    .logo-principal {
+        height: 18em;
+        width: 100%;
+    }
+    nav.redes-sociales {
+        text-align: center;
+    }
+    nav.redes-sociales a {
+        color: #fff;
+        font-size: 3em;
+        margin-right: 2em;
+    }
+    nav.redes-sociales a:last-child {
+        margin-right: 0;
+    }
+    .informacion-evento p i {
+        color: #fe4918;
+        font-size: 3rem;
+    }
+    p.disponible {
+        float: left;
+        font-family: var(--subtitulo);
+        margin-left: 1em;
+        color: #fff;
+        font-size: 1.4em;
+    }
+    p.ciudad {
+        float: right;
+        text-align: right;
+        font-family: var(--subtitulo);
+        margin-right: 1em;
+        color: #fff;
+        font-size: 1.4em;
+    }
+}
+    @media only screen and (min-width: 480px){
+        div.hero {
+            background-image: url(../img/portada.jpg);
+            height: 100vh;
+            background-position: top center;
+            background-size: cover;
+            max-width: 100%;
+        }
+        div.contenido-header {
+            padding-top: .5em;
+        }
+        .logo-principal {
+            height: 40em;
+            width: 100%;
+        }
+        nav.redes-sociales {
+            text-align: center;
+        }
+        nav.redes-sociales a {
+            color: #fff;
+            font-size: 3em;
+            margin-right: 2em;
+        }
+        nav.redes-sociales a:last-child {
+            margin-right: 0;
+        }
+        .informacion-evento p i {
+            color: #fe4918;
+            font-size: 3rem;
+        }
+        p.disponible {
+            float: left;
+            font-family: var(--subtitulo);
+            margin-left: 1em;
+            color: #fff;
+            font-size: 1.4em;
+        }
+        p.ciudad {
+            float: right;
+            text-align: right;
+            font-family: var(--subtitulo);
+            margin-right: 1em;
+            color: #fff;
+            font-size: 1.4em;
+        }
+    }
+    @media only screen and (min-width: 768px){
+    div.hero {
+        background-image: url(../img/portada.jpg);
+        height: 100vh;
+        background-position: top center;
+        background-size: cover;
+        background-attachment: fixed;
+        max-width: 100%;
+        -webkit-filter: brightness(.8);
+        filter: brightness(.8);
+    }
+        div.contenido-header {
+        padding-top: 1em;
+    }
+    nav.redes-sociales {
+        text-align: center;
+    }
+    nav.redes-sociales a {
+        color: #fff;
+        font-size: 3em;
+        margin-right: 3em;
+    }
+    nav.redes-sociales a:last-child {
+        margin-right: 0;
+    }
+    div.informacion-evento {
+        text-align: center;
+        color: #fff;
+        padding-top: 50px;
+    }
+    .logo-principal {
+        width: 71em;
+        max-width: 100%;
+        text-align: center;
+    }
+    div.informacion-evento {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .informacion-evento p {
+        margin: 0;
+        display: inline;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .informacion-evento p i {
+        color: #fe4918;
+        font-size: 4rem;
+    }
+    p.disponible {
+        float: left;
+        font-family: var(--subtitulo);
+    }
+    p.ciudad {
+        float: right;
+        text-align: right;
+        font-family: var(--subtitulo);
+    }
+    p.slogan {
+        text-transform: none;
+        font-family: var(--subtitulo);
+    }
+}
+
+/* ==========================================================================
+    barra de navegacion
+    ========================================================================== */
+    @media only screen and (max-width: 480px) {
+    div.barra {
+        background: #AF1313;
+        padding: 2em 0;
+        position: relative;
+    }
+    .logo-secundario {
+        width: 10em;
+        margin-left: 2em;
+    }
+}
+    @media only screen and (min-width: 480px) {
+    div.barra {
+        background: #AF1313;
+        padding: 2em 0;
+        position: relative;
+    }
+    .logo-secundario {
+        width: 10em;
+        margin-left: 2em;
+    }
+}
+    @media only screen and (min-width: 768px) {
+       div.barra {
+           background-color: var(--primero);
+           padding: 0;
+           position: relative;
+           box-shadow: 0 0 1em 0 rgba(0, 0, 0, .8);
+       }
+       .logo-secundario {
+           width: 15em;
+           margin-left: 5em;
+       }
+    }
+/* ==========================================================================
+    menu pizzas-hamburguesas-complementos
+    ========================================================================== */
+    nav.nuestro-menu {
+        background-color: var(--primero);
+        box-shadow: 0 0 1em 0 rgba(0, 0, 0, .8);
+        display: flex;
+        justify-content: space-around;
+        border-radius: 1em;
+
+        
+    }
+    nav.nuestro-menu a {
+        color: #fff;
+        padding: .5em 3em;
+        font-size: 3em;
+        font-family: var(--subtitulo);
+        
+    }
+    nav.nuestro-menu a:hover {
+        background-color: var(--segundo);
+        transition: all .6s;
+        background-size: 0 3em;
+        
+    }
+/* ==========================================================================
+    menu clasica-especial-gourmet
+    ========================================================================== */    
+    .nuestro-menu2 {
+        background-color: var(--primero);
+        box-shadow: 0 0 1em 0 rgba(0, 0, 0, .8);
+        display: flex;
+        justify-content: space-around;
+        border-radius: 4em;
+        width: 70%;
+        margin: 2em auto;
+    }
+    .nuestro-menu2 a {
+        color: #fff;
+        padding: .5em 2em;
+        font-size: 3em;
+        font-family: var(--subtitulo);
+    }
+    nav.nuestro-menu2 a:hover {
+        background-color: var(--segundo);
+        transition: all 1s ease;
+        background-size: 0 3em;
+        
+        
+    }
+ /* ==========================================================================
+     Menú movil
+     ========================================================================== */
+     div.menu-movil {
+        width: 60px;
+        display: block;
+        float: right;
+        text-align: right;
+        margin-top: 1em;
+        position: absolute;
+        
+    }
+    div.menu-movil:hover {
+        cursor: pointer;
+    }
+    div.menu-movil span {
+        height: 8px;
+        margin-bottom: 6px;
+        background-color: #fff;
+        display: block;
+    }
+    @media only screen and (min-width: 768px) {
+        div.menu-movil span {
+            display: none;
+        }
+    }
+/* ==========================================================================
+    Navegacion principal
+    ========================================================================== */
+    nav.navegacion-principal{
+        display: none;
+    }
+    nav.navegacion-principal a {
+        font-family: 'ZCOOL QingKe HuangYou', cursive;
+        color: #fff;
+        text-decoration: none;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+    nav.navegacion-principal a:hover {
+        background-color: var(--segundo);
+        padding: .5em;
+        transition: all 0.6s ease;
+    }
+     div.menu-movil {
+    width: 60px;
+    display: block;
+    float: right;
+    text-align: right;
+    margin-top: 12px;
+    position: absolute;
+    right: 10%;
+    top: 25%;
+}
+@media only screen and (min-width: 768px) {
+    nav.navegacion-principal a {
+        font-family: var(--subtitulo);
+        color: #fff;
+        text-decoration: none;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        width: 100%;
+        display:inline;
+        text-align: center;
+        margin: 0 0.5em;
+        padding: 0.5em;
+    }
+    nav.navegacion-principal a:hover {
+        background-color: var(--segundo);
+        transition: all 0.6s ease;
+        padding: .5em;
+        border-radius: 30px;
+    }
+    nav.navegacion-principal {
+        display: inline;
+        float: right;
+        position: absolute;
+        top: 25%;
+        right: 5%;
+    }
+}
+/* ==========================================================================
+    Menu para el restaurante
+    ========================================================================== */
+    ul.lista-menu li {
+        padding: 10px;
+        float: left;
+    }
+    @media only screen and (min-width:480px) {
+        .img-menu {
+            width: 450px;
+            height: 300px;
+        }
+    }
+    @media only screen and (min-width:768px) {
+        .img-menu {
+            width: 450px;
+            height: 300px;
+        }
+    }
+    @media only screen and (max-width:480px) {
+        .img-menu {
+            width: 191px;
+            height: 135px;
+        }
+        ul.lista-menu li {
+            width: 50%;
+            float: right;
+        }
+    }
+    @media only screen and (min-width:480px) {
+        ul.lista-menu li {
+            width: 50%;
+        }
+    }
+    @media only screen and (min-width:768px) {
+        ul.lista-menu li {
+            width: 25%;
+        }
+    }
+    div.menu-restaurante {
+        position: relative;
+        overflow: hidden;
+    }
+    div.menu-restaurante img {
+        max-width: 100%;
+        filter: gray;
+    }
+    div.menu-restaurante:hover img {
+        -webkit-filter: grayscale(0);
+        -webkit-transition: all 0.5s ease-in-out;
+        -webkit-transform: scale(1.1);
+        cursor: pointer;
+    }
+/* ==========================================================================
+    menu restaurante nombre de la pizza para telefono
+    ========================================================================== */
+    div.menu-restaurante p {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 1em 1em;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.55);
+        width: 100%;
+        text-align: left;
+        font-family: 'ZCOOL QingKe HuangYou', cursive;
+        font-size: 1em;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    div.menu-restaurante:hover p {
+        display: none;
+        transition: all 0.8s ease;
+    }
+/* ==========================================================================
+    menu restaurante nombre de la pizza para tablet
+    ========================================================================== */
+    @media only screen and (min-width:480px) {
+        div.menu-restaurante p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 1em 1.5em;
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.55);
+            width: 100%;
+            text-align: left;
+            font-family: 'ZCOOL QingKe HuangYou', cursive;
+            font-size: 2em;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        div.menu-restaurante:hover p {
+            display: none;
+            transition: all 0.8s ease;
+        }
+    }
+/* ==========================================================================
+    menu restaurante nombre de la pizza para escritorio
+    ========================================================================== */
+    @media only screen and (min-width:768px) {
+    div.menu-restaurante p {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 1em 1.5em;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.55);
+        width: 100%;
+        text-align: left;
+        font-family: 'ZCOOL QingKe HuangYou', cursive;
+        font-size: 3em;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    div.menu-restaurante:hover p {
+        display: none;
+        transition: all 0.8s ease;
+    }
+}
+/* ==========================================================================
+    Promocion princial
+    ========================================================================== */
+@media only screen and (min-width:768px) {
+        .parallax::before {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        -webkit-filter: brightness(.8);
+        filter: brightness(.8);
+    }
+
+    div.promocion {
+        position: relative;
+        height: auto;
+    }
+    div.promocion::before {
+        background-image: url(../img/para.png);
+        content: '';
+    }
+    .promo p{
+        position: relative;
+        padding: 3em 0;
+        font-family: var(--subtitulo);
+        font-size: 6em;
+        color: #fe4918;
+        text-align: center;
+        font-weight: bold;
+        display: block;
+        margin: 0;
+    }
+}
+@media only screen and (min-width:480px) {
+    .parallax::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /*background-attachment: fixed;*/
+    -webkit-filter: brightness(.8);
+    filter: brightness(.8);
+  }
+  div.promocion {
+      position: relative;
+      height: auto;
+  }
+  div.promocion::before {
+      background-image: url(../img/para.png);
+      content: '';
+  }
+  .promo p{
+      position: relative;
+      padding: 3em 0;
+      font-family: var(--subtitulo);
+      font-size: 6em;
+      color: #fe4918;
+      text-align: center;
+      font-weight: bold;
+      display: block;
+      margin: 0;
+  }
+}
+/* ==========================================================================
+    datos de la pizzeria
+    ========================================================================== */
+    @media only screen and (max-width: 480px) {
+        .datos {
+            padding-bottom: 2em;
+        }
+        .datos p {
+            font-size: 1.8em;
+            font-family: var(--texto);
+            width: 90%;
+        }
+        .datos h3 {
+            font-size: 2.5em;
+            font-family: var(--subtitulo);
+            text-transform: uppercase;
+            color: var(--segundo);
+        }
+        .datos span {
+            font-size: 2.2em;
+            font-family: var(--subtitulo);
+        }
+        .info-redes {
+            font-size: 3em;
+            margin-top: 2em;
+        }
+        .info-redes a {
+            color: #000;
+            margin-right: 1em;
+            width: 25%;
+        }
+        .info-redes a:last-child {
+            margin-right: 0;
+        }
+    }
+    @media only screen and (min-width: 480px) {
+        
+    @media only screen and (min-width:768px) {
+        .datos {
+            width: 33%;
+            float: right;
+            padding-bottom: 2em;
+        }
+        .datos p {
+            font-size: 2em;
+            font-family: var(--texto);
+            width: 90%;
+        }
+        .datos h3 {
+            font-size: 3em;
+            font-family: var(--subtitulo);
+            text-transform: uppercase;
+            color: var(--segundo);
+        }
+        .datos span {
+            font-size: 2em;
+            font-family: var(--subtitulo);
+        }
+        .info-redes {
+            font-size: 3em;
+            margin-top: 2em;
+        }
+        .info-redes a {
+            color: #000;
+            margin-right: 1em;
+        }
+    }
+/* ==========================================================================
+    Mapa
+    ========================================================================== */
+    @media only screen and (max-width:480px){
+        #mapa {
+            background-color: #e1e1e1;
+            height: 20em;
+        }
+    }
+    @media only screen and (min-width:480px){
+        #mapa {
+            background-color: #e1e1e1;
+            height: 20em;
+        } 
+    }
+    @media only screen and (min-width:768px) {
+    #mapa {
+        background-color: #e1e1e1;
+        height: 35em;
+    }
+/* ==========================================================================
+    Formulario de contacto
+    ========================================================================== */
+    form {
+        background-color: var(--segundo);
+        display: block;
+        padding: 1.5em;
+    }
+    form input,textarea {
+        display: block;
+        margin: 1em auto;
+        width: 40%;
+        height: 3em;
+        border-radius: .7em;
+        font-family: var(--texto);
+    }
+    form input:last-child {
+        margin: 0 auto;
+        
+    }
+    .mensaje {
+        height: 6em;
+    }
+    .enviar:hover{
+        background-color: var(--footer);
+        color: #fff;
+        transition: all .8s ease;
+    }
+/*=====================================================
+    Footer
+=======================================================*/
+@media only screen and (min-width:768px) {
+    footer {
+      background-color: var(--footer);
+      padding: 2em;
+    }
+    footer h4 {
+      font-family: var(--subtitulo);
+      font-size: 2em;
+      color: #fff;
+    }
+    footer span {
+      font-family: var(--titulo);
+      font-size: 2.5em;
+      color: var(--segundo);
+    }
+    .navegacion-footer a {
+      display: block;
+      font-family: var(--subtitulo);
+      color: #fff;
+      font-size: 2em;
+      margin-bottom: 1em;
+      text-decoration: none;
+    }
+    .navegacion-footer a:hover {
+      background-color: var(--segundo);
+      transition: all 0.6s ease;
+      padding: .5em;
+      border-radius: 30px;
+    }
+    .redes-footer {
+        display: flex;
+        justify-content: space-around;    
+    }
+    .redes-footer a {
+        color: #000;
+        font-size: 3em;
+    }
+    .redes-footer a:hover {
+        color: #ffffff;
+        transition: all 0.5s;
+    }
+}
+    .pie {
+        background-color: #000;
+        height: 5vh;
+        margin-bottom: 1em;
+    }
